@@ -28,8 +28,10 @@ def preview_customers():
     else:
         print("Add a new customer to the directory")
         print("-----------------------")
+        new_customer()
         return
 
+#add new customer to database
 def new_customer():
     customer_dictionary = {
     }
@@ -62,6 +64,7 @@ questions = {
     "Country of source: ",
 }
 
+#add a new customer at the same time
 def input_new_customer():
     print("-----------------------")
     response = input("Type yes to proceed/ add another customer or no to STOP: ")
